@@ -1,6 +1,9 @@
 {
     "require": {
-        "mongodb/laravel-mongodb": "^2.3"
+        "php": ">=5.6.4",
+        "mongodb/laravel-mongodb": "^2.3",
+        "laravel/framework": "5.4.*"
+        
     },
     "config": {
         "allow-plugins": {

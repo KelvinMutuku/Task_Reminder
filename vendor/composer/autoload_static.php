@@ -8,39 +8,77 @@ class ComposerStaticInit08d0d5741e49747fab6b5bd01e79aabf
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
+        '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'TijsVerkoyen\\CssToInlineStyles\\' => 31,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Routing\\' => 26,
+            'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\HttpKernel\\' => 29,
+            'Symfony\\Component\\HttpFoundation\\' => 33,
+            'Symfony\\Component\\Finder\\' => 25,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\CssSelector\\' => 30,
+            'Symfony\\Component\\Console\\' => 26,
+        ),
+        'R' => 
+        array (
+            'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
-            'Psr\\Container\\' => 14,
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'L' => 
+        array (
+            'League\\MimeTypeDetection\\' => 25,
+            'League\\Flysystem\\' => 17,
         ),
         'I' => 
         array (
-            'Illuminate\\Support\\' => 19,
-            'Illuminate\\Events\\' => 18,
-            'Illuminate\\Database\\' => 20,
-            'Illuminate\\Contracts\\' => 21,
-            'Illuminate\\Container\\' => 21,
+            'Illuminate\\' => 11,
         ),
         'D' => 
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Common\\Inflector\\' => 26,
+        ),
+        'C' => 
+        array (
+            'Cron\\' => 5,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'TijsVerkoyen\\CssToInlineStyles\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -49,41 +87,85 @@ class ComposerStaticInit08d0d5741e49747fab6b5bd01e79aabf
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Polyfill\\Ctype\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Contracts\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Symfony\\Component\\Routing\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+            0 => __DIR__ . '/..' . '/symfony/routing',
         ),
-        'Psr\\Container\\' => 
+        'Symfony\\Component\\Process\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
+            0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Illuminate\\Support\\' => 
+        'Symfony\\Component\\HttpKernel\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/support',
+            0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Illuminate\\Events\\' => 
+        'Symfony\\Component\\HttpFoundation\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/events',
+            0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Illuminate\\Database\\' => 
+        'Symfony\\Component\\Finder\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/database',
+            0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Illuminate\\Contracts\\' => 
+        'Symfony\\Component\\EventDispatcher\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/contracts',
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Illuminate\\Container\\' => 
+        'Symfony\\Component\\Debug\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/container',
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
+        'Illuminate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (
@@ -92,6 +174,10 @@ class ComposerStaticInit08d0d5741e49747fab6b5bd01e79aabf
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+        'Cron\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
         ),
     );
 
@@ -105,6 +191,13 @@ class ComposerStaticInit08d0d5741e49747fab6b5bd01e79aabf
             'UpdateHelper\\' => 
             array (
                 0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
+        ),
+        'P' => 
+        array (
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
         'J' => 

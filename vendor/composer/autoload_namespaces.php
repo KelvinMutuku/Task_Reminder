@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'UpdateHelper\\' => array($vendorDir . '/kylekatarnls/update-helper/src'),
+    'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Jenssegers\\Mongodb' => array($vendorDir . '/mongodb/laravel-mongodb/src'),
     'Jenssegers\\Eloquent' => array($vendorDir . '/mongodb/laravel-mongodb/src'),
 );
