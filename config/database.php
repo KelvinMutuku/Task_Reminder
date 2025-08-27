@@ -31,6 +31,12 @@ return [
 
     'connections' => [
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGODB_URI'),
+            'database' => 'Task_Reminder_DB',
+          ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
