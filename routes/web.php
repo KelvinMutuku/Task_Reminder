@@ -29,3 +29,6 @@ Route::get('/ping', function  (Request $request) {
     }
     return ['msg' => $msg];
   });
+
+  use  App\Http\Controllers\TaskController;
+Route::resource('tasks', TaskController::class)->middleware('auth');
