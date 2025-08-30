@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,18 +18,22 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::resource('tasks', TaskController::class)->middleware('auth');
 
-Route::get('/ping', function  (Request $request) {
+Route::get('/info', function () {
+    phpinfo();
+});
+
+Route::get('/ping', function (Request $request) {
     $connection = DB::connection('mongodb');
     try {
-      $connection->command(['ping' => 1]);
-      $msg = 'MongoDB is accessible!';
-    } catch (Exception $e) {
-      $msg = 'You are not connected to MongoDB. Error: ' . $e->getMessage();
+        $connection->command(['ping' => 1]);
+        $msg = 'You are connected to MongoDB!';
+    } catch (\Exception  $e) {
+        $msg = 'You are not connected to MongoDB. Error: '.$e->getMessage();
     }
-    return ['msg' => $msg];
-  });
 
-  use  App\Http\Controllers\TaskController;
-Route::resource('tasks', TaskController::class)->middleware('auth');
+    return ['msg' => $msg];
+});
+
+require __DIR__.'/auth.php';
